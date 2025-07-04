@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "cnpm": "^9.4.0"
+  },
+  "devDependencies": {
+    "vitepress": "^1.6.3"
+  },
+  "scripts": {
+    "docs:dev": "vitepress dev vite-test",
+    "docs:build": "vitepress build vite-test",
+    "docs:preview": "vitepress preview vite-test"
+  }
+}
