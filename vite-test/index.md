@@ -2,9 +2,9 @@
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home
 hero:
-  name: "Nashorn Foundation"
+  name: "Nashorn Client"
   text: ""
-  tagline: A Minecraft Client Organization
+  tagline: A Minecraft 1.8.9 & 1.20.1 Hacking Client.
   image:
     src: /ic.png
   actions:
@@ -16,8 +16,8 @@ hero:
       link: /api-examples
 
 features:
-  - title: Nashorn Client
-    details: Minecraft 1.8.9 Hacking Client
+  - title: Easy to configure.
+    details: We have the easiest modules to configure.Any kids who knows how to hacking can configure a blatant config.
   - title: Please waiting
     details: 
   - title: Please waiting
