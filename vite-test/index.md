@@ -1,11 +1,12 @@
 ---
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home
-
 hero:
   name: "Nashorn Foundation"
   text: ""
   tagline: A Minecraft Client Organization
+  image:
+    src: /ic.png
   actions:
     - theme: brand
       text: Markdown Examples

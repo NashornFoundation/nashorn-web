@@ -43,6 +43,7 @@
  *   in custom container, badges, etc.
  * -------------------------------------------------------------------------- */
 
+ 
 :root {
   --vp-c-default-1: var(--vp-c-gray-1);
   --vp-c-default-2: var(--vp-c-gray-2);
@@ -89,6 +90,84 @@
 /**
  * Component: Home
  * -------------------------------------------------------------------------- */
+:root {
+    .VPNav {
+        background-color: #9ddfcf30;
+        backdrop-filter: blur(10px);
+    }
+    .VPNav {
+        .VPNavBar {
+            .content-body {
+                background-color: transparent;
+            }
+            background-color: transparent;
+            backdrop-filter: none;
+        }
+    }
+
+    /* 搜索框透明 */
+    .DocSearch-Button {
+        backdrop-filter: blur(10px);
+    }
+
+    /* Feature透明 */
+    .VPFeature {
+        border: 1px solid transparent;
+        box-shadow: 0 10px 30px 0 rgb(0 0 0 / 15%);
+    }
+
+    /* 文档页侧边栏顶部透明 */
+    .curtain {
+        backdrop-filter: blur(10px);
+    }
+
+    /* 移动端大纲栏透明 */
+    .VPLocalNav {
+        backdrop-filter: blur(10px);
+    }
+}
+
+:root {
+  div.collapse.collapse-arrow div.collapse-title::after {
+  margin-top: 10px !important;
+}
+    /* 文档页Logo出文字下横条 */
+    @media (min-width: 960px) {
+        .VPNavBarTitle.has-sidebar .title {
+            border-bottom-color: transparent;
+        }
+    }
+
+    /* 页脚横条隐藏 */
+    .VPFooter {
+        border-top: none;
+    }
+
+    /* 手机端菜单栏顶部横条隐藏 */
+    .VPNavBar.screen-open {
+        border-bottom: none;
+    }
+
+    /* 手机端菜单栏菜单分割线隐藏 */
+    .VPNavScreenMenuLink {
+        border-bottom: none;
+    }
+
+    /* 手机端菜单组隐藏 */
+    .VPNavScreenMenuGroup {
+        border-bottom: none;
+    }
+
+    /* 手机端大纲栏横条隐藏 */
+    .VPLocalNav {
+        border-bottom: none;
+    }
+}
+
+/* 导航栏下划线隐藏 */
+.divider {
+    display: none;
+}
 
 :root {
   --vp-home-hero-name-color: transparent;
@@ -98,17 +177,18 @@
     #41d1ff
   );
 
-  --vp-home-hero-image-background-image: linear-gradient(
-    -45deg,
-    #bd34fe 50%,
-    #47caff 50%
-  );
-  --vp-home-hero-image-filter: blur(44px);
+   --vp-home-hero-image-background-image: linear-gradient(
+        -45deg,
+        #8ed4cb 55%,
+        /* logo 偏下方的 */ #bccae2 60% /* logo 偏上方的 */
+    );
+    --vp-home-hero-image-filter: blur(100px);
+    -vp-nav-bg-color: #00000000;
 }
 
 @media (min-width: 640px) {
   :root {
-    --vp-home-hero-image-filter: blur(56px);
+    --vp-home-hero-image-filter: blur(26px);
   }
 }
 
@@ -136,4 +216,6 @@
 .DocSearch {
   --docsearch-primary-color: var(--vp-c-brand-1) !important;
 }
-
+.navbar div.collapse.collapse-arrow div.collapse-title::after {
+  margin-top: 10px !important;
+}
