@@ -3,9 +3,9 @@
 layout: home
 
 hero:
-  name: "Test"
-  text: "A VitePress Site"
-  tagline: My great project tagline
+  name: "Nashorn Foundation"
+  text: ""
+  tagline: A Minecraft Client Organization
   actions:
     - theme: brand
       text: Markdown Examples
@@ -15,11 +15,11 @@ hero:
       link: /api-examples
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: Nashorn Client
+    details: Minecraft 1.8.9 Hacking Client
+  - title: Please waiting
+    details: 
+  - title: Please waiting
+    details: 
 ---
 
