@@ -31,20 +31,23 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
+
       - name: Install dependencies
         run: |
           npm install -g pnpm
           pnpm install
 
-      - name: Build
-        run: pnpm vitepress build src
+      - name: Build using custom script (docs:build)
+        run: npm run docs:build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: 'vite-test/.vitepress/dist'
+          path: 'vite-test/.vitepress/dist'  # 确保路径与你的输出目录一致
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
